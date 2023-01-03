@@ -48,20 +48,20 @@
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .card p {
-    color: white;
-    text-align: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card p {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .card p {
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
