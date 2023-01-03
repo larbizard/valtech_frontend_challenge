@@ -39,7 +39,6 @@
   font-weight: bold;
   cursor: pointer;
   border-radius: 6px;
-  transition-duration: 4s;
 }
 
 .card button:hover {
