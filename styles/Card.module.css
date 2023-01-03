@@ -1,0 +1,58 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgba(170, 91, 91, 0.074);
+  min-height: 400px;
+}
+
+.card h2 {
+  color: white;
+  font-size: 1rem;
+}
+
+.card h3 {
+  color: white;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.card p {
+  color: white;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.card button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: rgba(255, 255, 255, 0.512);
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .card p {
+    color: white;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+}
