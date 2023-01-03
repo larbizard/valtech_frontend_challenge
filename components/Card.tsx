@@ -32,22 +32,32 @@ const Card = ({
       style={{
         backgroundImage: `url(${backgroundImageUrl})`,
         backgroundSize: "cover",
-        borderRadius: '6px'
+        borderRadius: "6px",
       }}
     >
       <div className={styles.card}>
         <h2>{subtitle}</h2>
-        <h3>{title}</h3>
-        <p style={{ visibility: visibleParagraph || hovered ? "visible" : "hidden" }}>
-          {paragraph}
-        </p>
-        {hover && (
-          <Link
-            style={{ visibility: hovered ? "visible" : "hidden" }}
-            href={`${buttonUrl}`}
-          >
-            <button>{buttonText}</button>
-          </Link>
+        <h3 style={{ fontSize: visibleParagraph ? "5rem" : "2rem" }}>
+          {title}
+        </h3>
+        {hovered && (
+          <>
+            <p
+              style={{
+                visibility: visibleParagraph || hovered ? "visible" : "hidden",
+              }}
+            >
+              {paragraph}
+            </p>
+            {hover && (
+              <Link
+                style={{ visibility: hovered ? "visible" : "hidden" }}
+                href={`${buttonUrl}`}
+              >
+                <button>{buttonText}</button>
+              </Link>
+            )}
+          </>
         )}
       </div>
     </div>
